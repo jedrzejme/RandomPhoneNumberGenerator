@@ -15,3 +15,5 @@ if save_to_file == "y":
 else:
     for i in range(n):
         generate_phone_number()
+
+input()
