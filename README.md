@@ -29,10 +29,7 @@
 **How to use it?** If you are on Windows you can use .exe file that you can download from [releases](https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases), or download python script, but to use it you have to have [python](https://www.python.org/downloads/) installed.
 
 ## Features
-* Optimized for US phone numbers
-    * Random area code in brackets
-    * Dash after 3 digits after area code
-    * Country code with plus
+* Optimized for US and Polish phone numbers
 
 ## Purpose
 I'm a novice programmer and I want to try my hand in making GitHub project.
