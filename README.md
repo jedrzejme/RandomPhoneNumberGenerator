@@ -30,6 +30,7 @@
 
 ## Features
 * Optimized for US and Polish phone numbers
+* Save output to a file
 
 ## Purpose
 I'm a novice programmer and I want to try my hand in making GitHub project.
