@@ -31,6 +31,7 @@
 ## Features
 * Optimized for US and Polish phone numbers
 * Save output to a file
+* Custom templates, learn more in the [wiki](https://github.com/jedrzejme/RandomPhoneNumberGenerator/wiki/Custom-Templates)
 
 ## Purpose
 I'm a novice programmer and I want to try my hand in making GitHub project.
