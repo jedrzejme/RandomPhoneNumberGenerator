@@ -3,3 +3,5 @@ dist/
 build/
 __pycache__/
 main.spec
+assets/icon.ico
+output/
