@@ -1,5 +1,21 @@
 from random import randint
 from contextlib import redirect_stdout
+import requests
+import shutil
+import os
+
+def download_file(url, destination):
+    folder_name = "templates"
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+    response = requests.get(url, stream=True)
+    if response.status_code == 200:
+        file_name = url.split('/')[-1]
+        file_path = os.path.join(destination, file_name)
+
+        with open(file_path, 'wb') as file:
+            response.raw.decode_content = True
+            shutil.copyfileobj(response.raw, file)
 
 def generate_phone_number(template):
     exec(f"""print(f"{template}")""")
@@ -28,23 +44,29 @@ def end():
     input("Press enter to exit")
     exit()
 
-country = str(input("Select country [USA/Poland/Custom] "))
+url = f"https://raw.githubusercontent.com/jedrzejme/RandomPhoneNumberGenerator/main/templates/USA.txt"
+destination = "templates"
+download_file(url, destination)
+url = f"https://raw.githubusercontent.com/jedrzejme/RandomPhoneNumberGenerator/main/templates/POL.txt"
+destination = "templates"
+download_file(url, destination)
 
-if country == "USA":
-    generate_output("+1 ({randint(1,9)}{randint(0,9)}{randint(0,9)}){randint(0,9)}{randint(0,9)}{randint(0,9)}-{randint(0,9)}{randint(0,9)}{randint(0,9)}{randint(0,9)}")
+country = str(input("Select country [USA/POL/Custom] "))
 
-if country == "Poland":
-    generate_output("+48 {randint(1,9)}{randint(0,9)}{randint(0,9)} {randint(0,9)}{randint(0,9)}{randint(0,9)} {randint(0,9)}{randint(0,9)}{randint(0,9)}")
+if os.path.isfile(f"templates/{country}.txt"):
+    if country != "Custom":
+        file = open(f"templates/{country}.txt", "r")
+        generate_output(file.read())
 
-if country == "Custom":
-    filename = str(input("File name with custom template: "))
-    if ".txt" in filename:
-        file = open(f"{filename}","r")
-    else:
-        file = open(f"{filename}.txt","r")
-    template = file.read()
+    if country == "Custom":
+        filename = str(input("File name with custom template: "))
+        if ".txt" in filename:
+            file = open(f"templates/{filename}","r")
+        else:
+            file = open(f"templates/{filename}.txt","r")
+        template = file.read()
 
-    generate_output(template)
+        generate_output(template)
 
 print("Wrong country")
 end()
