@@ -28,6 +28,11 @@
 
 **How to use it?** If you are on Windows you can use .exe file that you can download from [releases](https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases), or download python script, but to use it you have to have [python](https://www.python.org/downloads/) installed.
 
+**What did I use?**
+* [Generating exe files](https://github.com/brentvollebregt/auto-py-to-exe)
+* [Coding](https://code.visualstudio.com/)
+* [Git management](https://desktop.github.com/)
+
 ## Features
 * Optimized for US and Polish phone numbers
 * Save output to a file
