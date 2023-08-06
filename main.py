@@ -1,11 +1,18 @@
+# RPNG - Random Phone Number Generator
+# Author: Jedrzej Bakalarski
+
 from random import randint
 from contextlib import redirect_stdout
 import requests
 import shutil
 import os
 
+directoryOfRandomPhoneNumberGenerator = "RandomPhoneNumberGenerator"
+directoryOfTemplates = f"{directoryOfRandomPhoneNumberGenerator}/templates"
+directoryOfGenerated = f"{directoryOfRandomPhoneNumberGenerator}/generated"
+
 def download_file(url, destination):
-    folder_name = "templates"
+    folder_name = directoryOfTemplates
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     response = requests.get(url, stream=True)
@@ -17,6 +24,13 @@ def download_file(url, destination):
             response.raw.decode_content = True
             shutil.copyfileobj(response.raw, file)
 
+urlUSA = f"https://raw.githubusercontent.com/jedrzejme/RandomPhoneNumberGenerator/main/templates/USA.txt"
+urlPOL = f"https://raw.githubusercontent.com/jedrzejme/RandomPhoneNumberGenerator/main/templates/POL.txt"
+destination = directoryOfTemplates
+print("Downloading templates...")
+download_file(urlUSA, destination)
+download_file(urlPOL, destination)
+
 def generate_phone_number(template):
     exec(f"""print(f"{template}")""")
 
@@ -25,45 +39,47 @@ def generate_output(template):
     save_to_file = str(input("Save to file? [y/n] "))
     if save_to_file == "y":
         filename = str(input("File name: "))
+        folder_name = directoryOfGenerated
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
         if ".txt" in filename:
-            with open(f"{filename}", 'w') as file:
+            print("Generating phone numbers...")
+            with open(f"{directoryOfGenerated}/{filename}", 'w') as file:
                 with redirect_stdout(file):
                     for i in range(n):
                         generate_phone_number(template)
+            print("Done!")
         else:
-            with open(f"{filename}.txt", 'w') as file:
+            print("Generating phone numbers...")
+            with open(f"{directoryOfGenerated}/{filename}.txt", 'w') as file:
                 with redirect_stdout(file):
                     for i in range(n):
                         generate_phone_number(template)
+            print("Done!")
     else:
+        print("Generating phone numbers...")
         for i in range(n):
             generate_phone_number(template)
+        print("Done!")
     end()
 
 def end():
     input("Press enter to exit")
     exit()
 
-url = f"https://raw.githubusercontent.com/jedrzejme/RandomPhoneNumberGenerator/main/templates/USA.txt"
-destination = "templates"
-download_file(url, destination)
-url = f"https://raw.githubusercontent.com/jedrzejme/RandomPhoneNumberGenerator/main/templates/POL.txt"
-destination = "templates"
-download_file(url, destination)
-
 country = str(input("Select country [USA/POL/Custom] "))
 
-if os.path.isfile(f"templates/{country}.txt"):
+if os.path.isfile(f"{directoryOfTemplates}/{country}.txt"):
     if country != "Custom":
-        file = open(f"templates/{country}.txt", "r")
+        file = open(f"{directoryOfTemplates}/{country}.txt", "r")
         generate_output(file.read())
 
     if country == "Custom":
         filename = str(input("File name with custom template: "))
         if ".txt" in filename:
-            file = open(f"templates/{filename}","r")
+            file = open(f"{directoryOfTemplates}/{filename}","r")
         else:
-            file = open(f"templates/{filename}.txt","r")
+            file = open(f"{directoryOfTemplates}/{filename}.txt","r")
         template = file.read()
 
         generate_output(template)
