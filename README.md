@@ -11,14 +11,17 @@
 </h1>
 
 <div align = 'center'>
+    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/'>
+        <img src = 'https://img.shields.io/github/stars/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge&color=%23cfb002'/>
+    </a>
+    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/tags'>
+        <img src = 'https://img.shields.io/github/v/tag/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge&label=version'/>
+    </a>
     <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/issues'>
-        <img src = 'https://img.shields.io/github/issues/jedrzejme/RandomPhoneNumberGenerator'/>
+        <img src = 'https://img.shields.io/github/issues/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge&color=%23ff6f00'/>
     </a>
     <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/pulls'>
-        <img src = 'https://img.shields.io/github/issues-pr/jedrzejme/RandomPhoneNumberGenerator'/>
-    </a>
-    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases'>
-        <img src = 'https://img.shields.io/github/v/release/jedrzejme/RandomPhoneNumberGenerator?include_prereleases&label=Latest%20Release'/>
+        <img src = 'https://img.shields.io/github/issues-pr/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge'/>
     </a>
 </div>
 
@@ -42,4 +45,4 @@
 I'm a novice programmer and I want to try my hand in making GitHub project.
 
 ## Support
-<p><a href="https://www.buymeacoffee.com/jedrzejme"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="jedrzejme" /></a><a href="https://ko-fi.com/jedrzejme"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="jedrzejme" /></a></p><br><br><br>
+<p><a href="https://jedrzej.me/supportme/index" target="_blank"> <img align="left" src="https://raw.githubusercontent.com/jedrzejme/jedrzejme/main/assets/supportme.svg" height="50" width="210" alt="jedrzejme" /></a></p>
