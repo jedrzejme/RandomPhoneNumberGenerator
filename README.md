@@ -53,6 +53,7 @@ python -m pip install -r requirements.txt
 ```
 python main.py
 ```
+5) It works!
 
 ## Features
 * Optimized for US and Polish phone numbers
