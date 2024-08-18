@@ -1,5 +1,6 @@
-# RPNG - Random Phone Number Generator
-# Author: Jedrzej Bakalarski
+# Random Phone Number Generator
+# Author: Jędrzej Bakalarski
+# Github: https://github.com/jedrzejme/RandomPhoneNumberGenerator
 
 from random import randint
 from contextlib import redirect_stdout
