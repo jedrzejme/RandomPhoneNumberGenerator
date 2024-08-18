@@ -27,19 +27,19 @@
 
 <br>
 
-**What is this?** Simple script written in python that allows you to generate random phone number.
+**❓ What is this?** Simple script written in python that allows you to generate random phone number.
 
-**How to use it?**
+**❓ How to use it?**
 * [**Using .exe file**](https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases)
 * [**Using Python**](#using-python-to-run-random-phone-number-generator)
 
 
-**What did I use?**
+**❓ What did I use?**
 * [Generating exe files](https://github.com/brentvollebregt/auto-py-to-exe)
 * [Coding](https://code.visualstudio.com/)
 * [Git management](https://desktop.github.com/)
 
-## Using Python to run Random Phone Number Generator
+## 🐍 Using Python to run Random Phone Number Generator
 1) Install Python and Git
 2) Clone this repository and enter its directory:
 ```
@@ -55,13 +55,13 @@ python main.py
 ```
 5) It works!
 
-## Features
+## 🚀 Features
 * Optimized for US and Polish phone numbers
 * Save output to a file
 * Custom templates, learn more in the [wiki](https://github.com/jedrzejme/RandomPhoneNumberGenerator/wiki/Custom-Templates)
 
-## Purpose
+## ❓ Purpose
 I'm a novice programmer and I want to try my hand in making GitHub project.
 
-## Support
+## 💲 Support
 <p><a href="https://support.jedrzej.me/" target="_blank"> <img align="left" src="https://raw.githubusercontent.com/jedrzejme/jedrzejme/main/assets/supportme.svg" height="50" width="210" alt="jedrzejme" /></a></p>
