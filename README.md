@@ -29,12 +29,30 @@
 
 **What is this?** Simple script written in python that allows you to generate random phone number.
 
-**How to use it?** If you are on Windows you can use .exe file that you can download from [releases](https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases), or download python script, but to use it you have to have [python](https://www.python.org/downloads/) installed.
+**How to use it?**
+* [**Using .exe file**](https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases)
+* [**Using Python**](#using-python-to-run-random-phone-number-generator)
+
 
 **What did I use?**
 * [Generating exe files](https://github.com/brentvollebregt/auto-py-to-exe)
 * [Coding](https://code.visualstudio.com/)
 * [Git management](https://desktop.github.com/)
+
+## Using Python to run Random Phone Number Generator
+1) Install Python and Git
+2) Clone this repository and enter its directory:
+```
+git clone https://github.com/jedrzejme/RandomPhoneNumberGenerator.git
+```
+3) Install requirements:
+```
+python -m pip install -r requirements.txt
+```
+4) Run main.py:
+```
+python main.py
+```
 
 ## Features
 * Optimized for US and Polish phone numbers
