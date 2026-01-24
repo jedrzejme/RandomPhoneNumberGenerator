@@ -11,17 +11,17 @@
 </h1>
 
 <div align = 'center'>
-    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/'>
-        <img src = 'https://img.shields.io/github/stars/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge&color=%23cfb002'/>
+    <a href = 'https://github.com/jbakalarski/RandomPhoneNumberGenerator/'>
+        <img src = 'https://img.shields.io/github/stars/jbakalarski/RandomPhoneNumberGenerator?style=for-the-badge&color=%23cfb002'/>
     </a>
-    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/tags'>
-        <img src = 'https://img.shields.io/github/v/tag/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge&label=version'/>
+    <a href = 'https://github.com/jbakalarski/RandomPhoneNumberGenerator/tags'>
+        <img src = 'https://img.shields.io/github/v/tag/jbakalarski/RandomPhoneNumberGenerator?style=for-the-badge&label=version'/>
     </a>
-    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/issues'>
-        <img src = 'https://img.shields.io/github/issues/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge&color=%23ff6f00'/>
+    <a href = 'https://github.com/jbakalarski/RandomPhoneNumberGenerator/issues'>
+        <img src = 'https://img.shields.io/github/issues/jbakalarski/RandomPhoneNumberGenerator?style=for-the-badge&color=%23ff6f00'/>
     </a>
-    <a href = 'https://github.com/jedrzejme/RandomPhoneNumberGenerator/pulls'>
-        <img src = 'https://img.shields.io/github/issues-pr/jedrzejme/RandomPhoneNumberGenerator?style=for-the-badge'/>
+    <a href = 'https://github.com/jbakalarski/RandomPhoneNumberGenerator/pulls'>
+        <img src = 'https://img.shields.io/github/issues-pr/jbakalarski/RandomPhoneNumberGenerator?style=for-the-badge'/>
     </a>
 </div>
 
@@ -30,8 +30,8 @@
 **❓ What is this?** Simple script written in python that allows you to generate random phone number.
 
 **❓ How to use it?**
-* [**Using .exe file**](https://github.com/jedrzejme/RandomPhoneNumberGenerator/releases)
-* [**Using Python**](#using-python-to-run-random-phone-number-generator)
+* [**Using .exe file**](https://github.com/jbakalarski/RandomPhoneNumberGenerator/releases)
+* [**Using Python**](#-using-python-to-run-random-phone-number-generator)
 
 
 **❓ What did I use?**
@@ -43,7 +43,7 @@
 1) Install Python and Git
 2) Clone this repository and enter its directory:
 ```
-git clone https://github.com/jedrzejme/RandomPhoneNumberGenerator.git
+git clone https://github.com/jbakalarski/RandomPhoneNumberGenerator.git
 ```
 3) Install requirements:
 ```
@@ -58,10 +58,10 @@ python main.py
 ## 🚀 Features
 * Optimized for US and Polish phone numbers
 * Save output to a file
-* Custom templates, learn more in the [wiki](https://github.com/jedrzejme/RandomPhoneNumberGenerator/wiki/Custom-Templates)
+* Custom templates, learn more in the [wiki](https://github.com/jbakalarski/RandomPhoneNumberGenerator/wiki/Custom-Templates)
 
 ## ❓ Purpose
 I'm a novice programmer and I want to try my hand in making GitHub project.
 
 ## 💲 Support
-<p><a href="https://support.jedrzej.me/" target="_blank"> <img align="left" src="https://raw.githubusercontent.com/jedrzejme/jedrzejme/main/assets/supportme.svg" height="50" width="210" alt="jedrzejme" /></a></p>
+<p><a href="https://support.jedrzej.me/" target="_blank"> <img align="left" src="https://raw.githubusercontent.com/jbakalarski/jbakalarski/main/assets/supportme.png" width="172" height="56" alt="jbakalarski" /></a></p>
